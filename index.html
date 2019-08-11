@@ -14,9 +14,9 @@
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom fonts for this template -->
-    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900"
+    <link href="css/SairaFont.css"
           rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i"
+    <link href="css/OpenSansFont.css"
           rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
@@ -26,7 +26,7 @@
 
     <!-- Custom Devicons from https://konpa.github.io/devicon/ -->
     <link rel="stylesheet"
-          href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+          href="css/devicon.min.css">
 
 
 </head>
@@ -37,7 +37,8 @@
     <a class="navbar-brand js-scroll-trigger" href="#page-top">
         <span class="d-block d-lg-none">Kedar Abhyankar</span>
         <span class="d-none d-lg-block">
-          <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.jpg" alt="Profile Image">
+          <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.jpg" alt="Profile Image"
+               height="6000" width="4000">
         </span>
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -88,13 +89,25 @@
                 Indiana. I am currently studying Robotics Engineering Technology at the Polytechnic Institute, and
                 actively in the process of transitioning to a Computer Science major.</p>
             <ul class="list-inline list-social-icons mb-0">
-                <li class="list-inline-item">
+                <li style="margin-outside: 0%" class="list-inline-item">
                     <a href="https://github.com/kedarabhyankar" target="_blank">
-                        <span class="iconify" data-icon="brandico:github" data-inline="false" data-width="50%" data-height="50%"></span>                  </a>
+                        <span class="iconify" data-icon="logos:github-icon" data-inline="false" data-width="50%"
+                              data-height="50%"></span></a>
                 </li>
+                <!--                <li class="list-inline-item">-->
+                <!--                    <i class="icon-fixed-width">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp-->
+                <!--                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp-->
+                <!--                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp-->
+                <!--                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp-->
+                <!--                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp-->
+                <!--                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp-->
+                <!--                    </i>-->
+                <!--                </li>-->
                 <li class="list-inline-item">
                     <a href="https://www.linkedin.com/in/kabhyankar/" target="_blank">
-                        <span class="iconify" data-icon="brandico:linkedin-rect" data-inline="false" data-width="50%" data-height="50%"></span>
+                        <span class="iconify" style="color:black;" data-icon="brandico:linkedin-rect"
+                              data-inline="false"
+                              data-width="50%" data-height="50%"></span>
                     </a>
                 </li>
             </ul>
@@ -210,13 +223,17 @@
     <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="education">
         <div class="my-auto">
             <h2 class="mb-5">Education</h2>
-
             <div class="resume-item d-flex flex-column flex-md-row mb-5">
                 <div class="resume-content mr-auto">
                     <h3 class="mb-0">Purdue University</h3>
                     <div class="subheading mb-3">West Lafayette, Indiana - Class of 2022</div>
-                    <div>Robotics Engineering Technology - Polytechnic School</div>
-                    <p></p>
+                    <div>Robotics Engineering Technology - Polytechnic Institute</div>
+                    <br>
+                    <p><u>Relevant Classes</u></p>
+                    <ul>
+                        <li>CS18000 - Problem Solving and Object Oriented Programming</li>
+                        <li>CS19300 - Tools</li>
+                    </ul>
                 </div>
                 <div class="resume-date text-md-right">
                     <span class="text-primary">August 2018 - June 2022</span>
@@ -283,52 +300,93 @@
     <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="skills">
         <div class="my-auto">
             <h2 class="mb-5">Skills</h2>
-            <div class="subheading mb-3">Programming Languages, Technologies, and Tools</div>
+            <div class="subheading mb-lg-auto">Programming Languages, Technologies, and Tools</div>
             <ul class="list-inline list-icons">
                 <li class="list-inline-item">
-                    <a data-toggle="tooltip" title="AWS"><i style="font-size:81px" class="devicon-amazonwebservices-plain-wordmark colored"></i></a>
+                    <a data-toggle="tooltip" title="AWS"><i
+                            style="font-size:60px" class="iconify" data-icon="logos:aws"></i></a>
                 </li>
                 <li class="list-inline-item">
-                    <a data-toggle="tooltip" title="Babel"><i style="font-size:81px" class="devicon-babel-plain colored"></i></a>
+                    <a data-toggle="tooltip" title="Babel"><i
+                            style="font-size:60px" class="iconify" data-icon="logos:babel"></i></a>
                 </li>
                 <li class="list-inline-item">
-                    <a data-toggle="tooltip" title="BootStrap"><i style="font-size:81px" class="devicon-bootstrap-plain-wordmark colored"></i></a>
+                    <a data-toggle="tooltip" title="BootStrap"><i
+                            style="font-size:60px" class="iconify" data-icon="logos:bootstrap"></i></a>
                 </li>
                 <li class="list-inline-item">
-                    <a data-toggle="tooltip" title="CSS"><i style="font-size:81px" class="devicon-css3-plain-wordmark colored"></i></a>
+                    <a data-toggle="tooltip" title="CSS"><i
+                            style="font-size:81px" class="iconify" data-icon="logos:css-3"></i></a>
                 </li>
                 <li class="list-inline-item">
-                    <a data-toggle="tooltip" title="GitHub"><i style="font-size:81px" class="devicon-github-plain-wordmark colored"></i></a>
+                    <a data-toggle="tooltip" title="Firebase"><i
+                            style="font-size:81px" class="iconify" data-icon="logos:firebase"></i></a>
                 </li>
                 <li class="list-inline-item">
-                    <a data-toggle="tooltip" title="HTML"><i style="font-size:81px" class="devicon-html5-plain-wordmark colored"></i></a>
+                    <a data-toggle="tooltip" title="GitHub"><i
+                            style="font-size:100px" class="iconify" data-icon="logos:github-octocat"></i></a>
                 </li>
                 <li class="list-inline-item">
-                    <a data-toggle="tooltip" title="IntelliJ IDEA"><i style="font-size:81px" class="devicon-intellij-plain colored"></i></a>
+                    <a data-toggle="tooltip" title="HTML"><i
+                            style="font-size:81px" class="iconify" data-icon="logos:html-5"></i></a>
                 </li>
                 <li class="list-inline-item">
-                    <a data-toggle="tooltip" title="Java"><i style="font-size:81px" class="devicon-java-plain colored"></i></a>
+                    <a data-toggle="tooltip" title="IntelliJ IDEA"><i
+                            style="font-size:60px" class="iconify" data-icon="logos:intellij-idea"></i></a>
                 </li>
                 <li class="list-inline-item">
-                    <a data-toggle="tooltip" title="JavaScript"><i style="font-size:81px" class="devicon-javascript-plain colored" data-width="100%" data-height="100%"></i></a>
+                    <a data-toggle="tooltip" title="Java"><i
+                            style="font-size:81px" class="iconify" data-icon="logos:java"></i></a>
+                </li>
+                <li>
+                    <br>
                 </li>
                 <li class="list-inline-item">
-                    <a data-toggle="tooltip" title="NodeJS"><i style="font-size:81px" class="devicon-nodejs-plain-wordmark colored"></i></a>
+                    <a data-toggle="tooltip" title="JavaScript"><i
+                            style="font-size:81px" class="iconify" data-icon="logos:javascript"></i></a>
                 </li>
                 <li class="list-inline-item">
-                    <a data-toggle="tooltip" title="Python"><i style="font-size:81px" class="devicon-python-plain-wordmark colored"></i></a>
+                    <a data-toggle="tooltip" title="NodeJS"><i
+                            style="font-size:81px" class="iconify" data-icon="logos:nodejs"></i></a>
                 </li>
                 <li class="list-inline-item">
-                    <a data-toggle="tooltip" title="React"><i style="font-size:81px" class="devicon-react-original-wordmark colored"></i></a>
+                    <a data-toggle="tooltip" title="Python"><i
+                            style="font-size:81px" class="iconify" data-icon="logos:python"></i></a>
                 </li>
                 <li class="list-inline-item">
-                    <a data-toggle="tooltip" title="Swift"><i style="font-size:81px" class="devicon-swift-plain colored"></i></a>
+                    <a data-toggle="tooltip" title="React"><i
+                            style="font-size:81px" class="iconify" data-icon="logos:react"></i></a>
                 </li>
                 <li class="list-inline-item">
-                    <a data-toggle="tooltip" title="Vim"><i style="font-size:81px" class="devicon-vim-plain colored"></i></a>
+                    <a data-toggle="tooltip" title="Swift"><i
+                            style="font-size:81px" class="iconify" data-icon="logos:swift"></i></a>
                 </li>
             </ul>
         </div>
+
+        <div class="subheading mb-lg-auto">Audio and Visual</div>
+        <ul class="list-inline list-icons">
+            <li class="list-inline-item">
+                <a data-toggle="tooltip" title="Premiere Pro"><i
+                        style="font-size:81px" class="iconify" data-icon="simple-icons:adobeaftereffects"></i></a>
+            </li>
+            <li class="list-inline-item">
+                <a data-toggle="tooltip" title="Premiere Pro"><i
+                        style="font-size:81px" class="iconify" data-icon="simple-icons:adobeaudition"></i></a>
+            </li>
+            <li class="list-inline-item">
+                <a data-toggle="tooltip" title="Premiere Pro"><i
+                        style="font-size:81px" class="iconify" data-icon="simple-icons:adobeillustrator"></i></a>
+            </li>
+            <li class="list-inline-item">
+                <a data-toggle="tooltip" title="Premiere Pro"><i
+                        style="font-size:81px" class="iconify" data-icon="simple-icons:adobephotoshop"></i></a>
+            </li>
+            <li class="list-inline-item">
+                <a data-toggle="tooltip" title="Premiere Pro"><i
+                        style="font-size:81px" class="iconify" data-icon="simple-icons:adobepremiere"></i></a>
+            </li>
+        </ul>
     </section>
 
     <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="interests">
@@ -345,11 +403,12 @@
                 one that I feel would be very fun! I'm super excited for these next couple years in college,
                 and couldn't be more excited for what life has in store for me during my time in college.</p>
             <div class="inline-block">
-                <img src="img/DSC_0118.JPG" width=1287 height=855 alt="Programming at FRC World Pit">
-                <img src="img/DSC_0352.JPG" width=1282 height=855 alt="FRC Worlds Lunch">
-                <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/YnzECEQHIMA"
-                        allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/cWWLnZOG3m8"
+                <img src="img/DSC_0118.JPG" width="1024" height="680" alt="Programming at FRC World Pit"
+                     style="margin-bottom: 50px">
+                <img src="img/DSC_0352.JPG" width=1024 height=683 alt="FRC Worlds Lunch" style="margin-bottom: 50px">
+                <iframe width="95.75%" height="650" src="https://www.youtube-nocookie.com/embed/YnzECEQHIMA"
+                        allow="autoplay; encrypted-media" allowfullscreen style="margin-bottom: 50px"></iframe>
+                <iframe width="95.75%" height="650" src="https://www.youtube.com/embed/cWWLnZOG3m8"
                         allow="autoplay; encrypted-media" allowfullscreen></iframe>
             </div>
         </div>
@@ -384,7 +443,7 @@
     <script src="js/resume.min.js"></script>
 
     <!-- Iconify for Simple-Line-Icons -->
-    <script src="https://code.iconify.design/1/1.0.3/iconify.min.js"></script>
+    <script src="js/iconify.min.js"></script>
 
     <script>
         $(document).ready(function () {
