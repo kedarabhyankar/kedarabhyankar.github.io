@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Kedar Abhyankar</title>
+    <title id="title">Kedar Abhyankar</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -22,13 +22,10 @@
     <link href="vendor/simple-line-icons/css/simple-line-icons.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="css/resume.min.css" rel="stylesheet">
+    <link href="css/resume.css" rel="stylesheet">
 
     <!-- Custom Devicons from https://konpa.github.io/devicon/ -->
-    <link rel="stylesheet"
-          href="css/devicon.min.css">
-
-
+    <link rel="stylesheet" href="css/devicon.min.css">
 </head>
 
 <body id="page-top">
@@ -38,7 +35,7 @@
         <span class="d-block d-lg-none">Kedar Abhyankar</span>
     </a>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav">
+        <ul class="navbar-nav" id="sideBarLinks">
             <li class="nav-item">
                 <a class="nav-link js-scroll-trigger" href="#about">About</a>
             </li>
@@ -69,35 +66,62 @@
                 <span class="text-primary">Abhyankar</span>
             </h1>
             <div class="subheading mb-5">
-                <p>Student at Purdue University&nbsp&nbsp&nbsp<a href="mailto:krabhyankar@email.com">krabhyankar@gmail.com</a> </p>
-
+                <p>Student at Purdue University&nbsp&nbsp&nbsp
+                    <a href="mailto:krabhyankar@email.com">krabhyankar@gmail.com</a>
+                </p>
             </div>
             <ul class="list-inline list-social-icons mb-0">
-                <li style="margin-outside: 0%" class="list-inline-item">
-                    <a href="https://github.com/kedarabhyankar" target="_blank">
+                <li class="list-inline-item d-print-none" id="github-icon-list-item">
+                    <a href="https://github.com/kedarabhyankar" target="_blank" id="github">
                         <span class="iconify" data-icon="logos:github-icon" data-inline="false" data-width="50%"
-                              data-height="50%"></span></a>
-                </li>
-                <li class="list-inline-item">
-                    <a href="https://www.linkedin.com/in/kabhyankar/" target="_blank">
-                        <span class="iconify" style="color:black;" data-icon="brandico:linkedin-rect"
-                              data-inline="false"
-                              data-width="50%" data-height="50%"></span>
+                              data-height="50%">
+                        </span>
                     </a>
                 </li>
-                <li class="list-inline-item">
-                    <a href="https://www.instagram.com/kedar_abhyankar/" target="_blank">
+                <li class="list-inline-item" id="github-link-list-item">
+                    <span class="iconify" data-icon="logos:github-icon" data-inline="false"
+                          data-width="10%"
+                          data-height="10%" id="github-link">
+                        <p id="github-link-text">https://github.com/kedarabhyankar</p>
+                    </span>
+                </li>
+                <li class="list-inline-item d-print-none" id="linkedin-icon-list-item">
+                    <a href="https://www.linkedin.com/in/kabhyankar/" target="_blank" id="linkedin">
+                        <span class="iconify" style="color:black;" data-icon="brandico:linkedin-rect"
+                              data-inline="false"
+                              data-width="50%" data-height="50%">
+                        </span>
+                    </a>
+                </li>
+                <li class="list-inline-item" id="linkedin-link-list-item">
+                    <span class="iconify" data-icon="brandico:linkedin-rect" style="color:black;"
+                          data-inline="false"
+                          data-width="10%"
+                          data-height="10%" id="linkedin-link">
+                        <p id="linkedin-link-text">https://www.linkedin.com/in/kabhyankar/</p>
+                    </span>
+                </li>
+                <li class="list-inline-item d-print-none" id="instagram-icon-list-item">
+                    <a href="https://www.instagram.com/kedar_abhyankar/" target="_blank" id="instagram">
                         <span class="iconify" data-icon="logos:instagram-icon"
                               data-inline="false"
                               data-width="50%" data-height="50%">
                         </span>
                     </a>
                 </li>
+                <li class="list-inline-item" id="instagram-link-list-icon">
+                    <span class="iconify" data-icon="logos:instagram-icon" data-inline="false"
+                          data-width="10%"
+                          data-height="10%" id="instagram-link">
+                        <p id="instagram-link-text">https://www.instagram.com/kedar_abhyankar/</p>
+                    </span>
+                </li>
             </ul>
             <br>
             <br>
             <br>
-            <p style="text-align: left; font-size: 20px">I am a undergraduate student in my Sophomore Year at Purdue
+            <p id="short-about-me" style="text-align: left; font-size: 20px">I am a undergraduate student in my
+                Sophomore Year at Purdue
                 University in West Lafayette, Indiana. I am currently studying Robotics Engineering Technology at the
                 Polytechnic Institute, and actively in the process of transitioning to a Computer Science major.
             </p>
@@ -133,7 +157,7 @@
                     <h3 class="mb-0">Computer Science Curriculum Academic Term Developer</h3>
                     <div class="subheading mb-3">Purdue University</div>
                     <p>Wrote projects, homework assignments, and labs as part of the CS18000 curriculum for the Spring
-                        2019 semester. Utilized Vocareum as a platform for grading, while all test scripts written in
+                        2020 semester. Utilized Vocareum as a platform for grading, while all test scripts written in
                         Java 10 with JUnit 4.12.</p>
                 </div>
                 <div class="resume-date text-md-right">
@@ -365,9 +389,9 @@
                      style="margin-bottom: 50px">
                 <img src="img/DSC_0352.JPG" width=1024 height=683 alt="FRC Worlds Lunch" style="margin-bottom: 50px">
                 <iframe width="95.75%" height="650" src="https://www.youtube-nocookie.com/embed/YnzECEQHIMA"
-                        allow="autoplay; encrypted-media" allowfullscreen style="margin-bottom: 50px"></iframe>
+                        allowusermedia sandbox="allow-scripts" allowfullscreen style="margin-bottom: 50px"></iframe>
                 <iframe width="95.75%" height="650" src="https://www.youtube.com/embed/cWWLnZOG3m8"
-                        allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        allowusermedia sandbox="allow-scripts" allowfullscreen></iframe>
             </div>
         </div>
     </section>
@@ -395,6 +419,11 @@
         $(document).ready(function () {
             $('[data-toggle="tooltip"]').tooltip();
         });
+    </script>
+
+    <!-- JQuery Call to allow for Access-Control-Allow-Origin -->
+    <script>
+        $.support.cors = true;
     </script>
 </div>
 </body>
