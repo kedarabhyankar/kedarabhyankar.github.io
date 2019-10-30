@@ -9,5 +9,6 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="iconify" level="application" />
+    <orderEntry type="library" name="bootstrap-select" level="application" />
   </component>
 </module>

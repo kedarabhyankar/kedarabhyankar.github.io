@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title id="title">Exam Finder</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="css/SairaFont.min.css"
+          rel="stylesheet">
+    <link href="css/OpenSansFont.min.css"
+          rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="vendor/simple-line-icons/css/simple-line-icons.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/examFinder.css" rel="stylesheet">
+
+    <!-- Custom Devicons from https://konpa.github.io/devicon/ -->
+    <link rel="stylesheet" href="css/devicon.min.css">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/css/bootstrap-select.min.css">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/js/bootstrap-select.min.js"></script>
+
+</head>
+
+<body>
+
+<h2 class="ml-0" style="font-size:100px;" id="dayOfLabQuestion">My lab is on...</h2>
+<label for="dayOfLab"></label>
+<div class="form-group">
+    <select class="form-control" id="dayOfLab">
+        <option disabled selected value> -- select an option --</option>
+        <option value="tuesday">Tuesday</option>
+        <option value="wednesday">Wednesday</option>
+        <option value="thursday">Thursday</option>
+        <option value="friday">Friday</option>
+    </select>
+</div>
+
+<h2 class="ml-xl-0" style="font-size:100px" id="labTimQuestion">My lab starts at...</h2>
+<label for="labTimeSelect"></label>
+<div class="form-group">
+    <select class="form-control" id="labTimeSelect">
+        <option disabled selected value> -- select an option --</option>
+        <option value="930">9:30 AM</option>
+        <option value="1130">11:30 AM</option>
+        <option value="130">1:30 PM</option>
+        <option value="330">3:30 PM</option>
+    </select>
+</div>
+
+<h2 class="ml-0" style="font-size:100px" id="labLocQuestion">My lab is in...</h2>
+<label for="labLocSelect"></label>
+<div class="form-group">
+    <select class="form-control" id="labLocSelect">
+        <option disabled selected value> -- select an option --</option>
+        <option value="haasg40">HAAS G040</option>
+        <option value="haasg56">HAAS G056</option>
+        <option value="haas257">HAAS 257</option>
+        <option value="lwsnb146">LWSN B146</option>
+        <option value="lwsnb148">LWSN B148</option>
+        <option value="lwsnb158">LWSN B158</option>
+    </select>
+</div>
+
+<div style="text-align: center;"><h2 class="mb-lg-0" style="font-size:100px" id="result">INVALID RESULT</h2></div>
+
+
+</body>
+
+<script>
+    let dayOfLabSelect = document.getElementById("dayOfLab").value;
+    let timeOfLabSelect = document.getElementById("labTimeSelect").value;
+    let labLocSelect = document.getElementById("labLocSelect").value;
+
+    if (dayOfLabSelect === "tuesday") {
+        if (timeOfLabSelect === "930") {
+            if (labLocSelect === "haasg40") {
+                document.getElementById("result").innerHTML = "SECTION G20 IS IN CL50 224, FROM 8 TO 10 PM."
+            } else {
+                document.getElementById("result").innerHTML = "INVALID RESULT"
+            }
+        } else if (timeOfLabSelect === "1130") {
+            if (labLocSelect === "lwsnb148") {
+                document.getElementById("result").innerHTML = "SECTION G23 IS IN CL50 224, FROM 8 TO 10 PM"
+            } else if (labLocSelect === "lwsnb158") {
+                document.getElementById("result").innerHTML = "SECTION B02 IS IN CL50 224, FROM 8 to 10 PM"
+            } else {
+                document.getElementById("result").innerHTML = "INVALID RESULT"
+            }
+        } else if (timeOfLabSelect === "130") {
+            if (labLocSelect === "lwsnb146") {
+                document.getElementById("result").innerHTML = "SECTION LC3 IS IN HAAS G040, FROM 5:30 to 7:30 PM"
+            } else if (labLocSelect === "haasg56") {
+                document.getElementById("result").innerHTML = "SECTION LC2 IS IN LWSN B148, FROM 5:30 to 7:30 PM"
+            } else {
+                document.getElementById("result").innerHTML = "INVALID RESULT"
+            }
+        } else if (timeOfLabSelect === "330") {
+            if (labLocSelect === "lwsnb146") {
+                document.getElementById("result").innerHTML = "SECTION G22 IS IN CL50 224, FROM 8 to 10 PM"
+            } else if (labLocSelect === "haas257") {
+                document.getElementById("result").innerHTML = "SECTION B10 IS IN CL50 224, FROM 8 to 10 PM"
+            } else {
+                document.getElementById("result").innerHTML = "INVALID RESULT"
+
+            }
+        }
+    } else if (dayOfLabSelect === "wednesday") {
+        if (timeOfLabSelect === "930") {
+            if (labLocSelect === "haas257") {
+                document.getElementById("result").innerHTML = "SECTION G21 IS IN CL50 224, FROM 8 TO 10 PM."
+            } else {
+                document.getElementById("result").innerHTML = "INVALID RESULT"
+            }
+        }
+    } else if (timeOfLabSelect === "1130") {
+        if (labLocSelect === "lwsnb148") {
+            document.getElementById("result").innerHTML = "SECTION G19 IS IN CL50 224, FROM 8 TO 10 PM."
+        } else if (labLocSelect === "lwsnb146") {
+            document.getElementById("result").innerHTML = "SECTION G26 IS IN CL50 224, FROM 8 TO 10 PM."
+        } else if (labLocSelect === "haasg40") {
+            document.getElementById("result").innerHTML = "SECTION LC4 IS IN HAAS G056, FROM 5:30 to 7:30 PM"
+        } else {
+            document.getElementById("result").innerHTML = "INVALID RESULT"
+        }
+    } else if (timeOfLabSelect === "130") {
+        if (labLocSelect === "lwsnb146") {
+            document.getElementById("result").innerHTML = "SECTION B05 IS IN LWSN B148, FROM 8 to 10 PM"
+        } else if (labLocSelect === "haasg40") {
+            document.getElementById("result").innerHTML = "SECTION B08 IS IN LWSN B158, FROM 8 to 10 PM"
+        } else {
+            document.getElementById("result").innerHTML = "INVALID RESULT"
+        }
+    } else if (timeOfLabSelect === "330") {
+        if (labLocSelect === "haasg40") {
+            document.getElementById("result").innerHTML = "SECTION B12 IS IN CL50 224, FROM 8 to 10 PM"
+        } else {
+            document.getElementById("result").innerHTML = "INVALID RESULT"
+        }
+    } else if (dayOfLabSelect === "thursday") {
+        if (timeOfLabSelect === "930") {
+            if (labLocSelect === "haasg56") {
+                document.getElementById("result").innerHTML = "SECTION G16 IS IN CL50 224, FROM 8 to 10 PM"
+            } else if (labLocSelect === "haas257") {
+                document.getElementById("result").innerHTML = "SECTION B13 IS IN CL50 224, FROM 8 to 10 PM"
+            } else {
+                document.getElementById("result").innerHTML = "INVALID RESULT"
+            }
+        } else if (timeOfLabSelect === "1130") {
+            if (labLocSelect === "lwsnb146") {
+                document.getElementById("result").innerHTML = "SECTION G15 IS IN CL50 224, FROM 8 to 10 PM"
+            } else if (labLocSelect === "haasg40") {
+                document.getElementById("result").innerHTML = "SECTION B01 IS IN LWSN B158, FROM 5:30 to 7:30 PM"
+            } else {
+                document.getElementById("result").innerHTML = "INVALID RESULT"
+            }
+        } else if (timeOfLabSelect === "130") {
+            if (labLocSelect === "lwsnb146") {
+                document.getElementById("result").innerHTML = "SECTION B03 IS IN LWSN B146, FROM 8 TO 10 PM"
+            } else {
+                document.getElementById("result").innerHTML = "INVALID RESULT"
+            }
+        } else if (timeOfLabSelect === "330") {
+            if (labLocSelect === "haasg56") {
+                document.getElementById("result").innerHTML = "SECTION B04 IS IN HAAS G056, FROM 8 TO 10 PM"
+            } else if (labLocSelect === "haas257") {
+                document.getElementById("result").innerHTML = "SECTION B11 IS IN HAAS G040, FROM 8 TO 10 PM"
+            } else {
+                document.getElementById("result").innerHTML = "INVALID RESULT"
+            }
+        }
+    } else if (dayOfLabSelect === "friday") {
+        if (timeOfLabSelect === "1130") {
+            if (labLocSelect === "lwsnb146") {
+                document.getElementById("result").innerHTML = "SECTION B09 IS IN CL50 224, FROM 8 to 10 PM"
+            } else {
+                document.getElementById("result").innerHTML = "INVALID RESULT"
+            }
+        } else if (timeOfLabSelect === "130") {
+            if (labLocSelect === "haasg40") {
+                document.getElementById("result").innerHTML = "SECTION B09 IS IN CL50 224, FROM 8 to 10 PM"
+            } else if (labLocSelect === "lwsnb148") {
+                document.getElementById("result").innerHTML = "SECTION LC1 IS IN LWSN B146, FROM 5:30 to 7:30 PM"
+            }
+        }
+    }
+</script>
+
