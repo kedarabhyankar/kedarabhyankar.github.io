@@ -77,125 +77,129 @@
     </select>
 </div>
 
+<button class="btn btn-primary btn-block" onclick="findLab()">Find my Exam!</button>
+
 <div style="text-align: center;"><h2 class="mb-lg-0" style="font-size:100px" id="result">INVALID RESULT</h2></div>
 
 
 </body>
 
 <script>
-    let dayOfLabSelect = document.getElementById("dayOfLab").value;
-    let timeOfLabSelect = document.getElementById("labTimeSelect").value;
-    let labLocSelect = document.getElementById("labLocSelect").value;
+    function findLab() {
+        let dayOfLabSelect = document.getElementById("dayOfLab").value;
+        let timeOfLabSelect = document.getElementById("labTimeSelect").value;
+        let labLocSelect = document.getElementById("labLocSelect").value;
 
-    if (dayOfLabSelect === "tuesday") {
-        if (timeOfLabSelect === "930") {
-            if (labLocSelect === "haasg40") {
-                document.getElementById("result").innerHTML = "SECTION G20 IS IN CL50 224, FROM 8 TO 10 PM."
-            } else {
-                document.getElementById("result").innerHTML = "INVALID RESULT"
+        if (dayOfLabSelect === "tuesday") {
+            if (timeOfLabSelect === "930") {
+                if (labLocSelect === "haasg40") {
+                    document.getElementById("result").innerHTML = "SECTION G20 IS IN CL50 224, FROM 8 TO 10 PM."
+                } else {
+                    document.getElementById("result").innerHTML = "INVALID RESULT"
+                }
+            } else if (timeOfLabSelect === "1130") {
+                if (labLocSelect === "lwsnb148") {
+                    document.getElementById("result").innerHTML = "SECTION G23 IS IN CL50 224, FROM 8 TO 10 PM"
+                } else if (labLocSelect === "lwsnb158") {
+                    document.getElementById("result").innerHTML = "SECTION B02 IS IN CL50 224, FROM 8 to 10 PM"
+                } else {
+                    document.getElementById("result").innerHTML = "INVALID RESULT"
+                }
+            } else if (timeOfLabSelect === "130") {
+                if (labLocSelect === "lwsnb146") {
+                    document.getElementById("result").innerHTML = "SECTION LC3 IS IN HAAS G040, FROM 5:30 to 7:30 PM"
+                } else if (labLocSelect === "haasg56") {
+                    document.getElementById("result").innerHTML = "SECTION LC2 IS IN LWSN B148, FROM 5:30 to 7:30 PM"
+                } else {
+                    document.getElementById("result").innerHTML = "INVALID RESULT"
+                }
+            } else if (timeOfLabSelect === "330") {
+                if (labLocSelect === "lwsnb146") {
+                    document.getElementById("result").innerHTML = "SECTION G22 IS IN CL50 224, FROM 8 to 10 PM"
+                } else if (labLocSelect === "haas257") {
+                    document.getElementById("result").innerHTML = "SECTION B10 IS IN CL50 224, FROM 8 to 10 PM"
+                } else {
+                    document.getElementById("result").innerHTML = "INVALID RESULT"
+
+                }
+            }
+        } else if (dayOfLabSelect === "wednesday") {
+            if (timeOfLabSelect === "930") {
+                if (labLocSelect === "haas257") {
+                    document.getElementById("result").innerHTML = "SECTION G21 IS IN CL50 224, FROM 8 TO 10 PM."
+                } else {
+                    document.getElementById("result").innerHTML = "INVALID RESULT"
+                }
             }
         } else if (timeOfLabSelect === "1130") {
             if (labLocSelect === "lwsnb148") {
-                document.getElementById("result").innerHTML = "SECTION G23 IS IN CL50 224, FROM 8 TO 10 PM"
-            } else if (labLocSelect === "lwsnb158") {
-                document.getElementById("result").innerHTML = "SECTION B02 IS IN CL50 224, FROM 8 to 10 PM"
-            } else {
-                document.getElementById("result").innerHTML = "INVALID RESULT"
-            }
-        } else if (timeOfLabSelect === "130") {
-            if (labLocSelect === "lwsnb146") {
-                document.getElementById("result").innerHTML = "SECTION LC3 IS IN HAAS G040, FROM 5:30 to 7:30 PM"
-            } else if (labLocSelect === "haasg56") {
-                document.getElementById("result").innerHTML = "SECTION LC2 IS IN LWSN B148, FROM 5:30 to 7:30 PM"
-            } else {
-                document.getElementById("result").innerHTML = "INVALID RESULT"
-            }
-        } else if (timeOfLabSelect === "330") {
-            if (labLocSelect === "lwsnb146") {
-                document.getElementById("result").innerHTML = "SECTION G22 IS IN CL50 224, FROM 8 to 10 PM"
-            } else if (labLocSelect === "haas257") {
-                document.getElementById("result").innerHTML = "SECTION B10 IS IN CL50 224, FROM 8 to 10 PM"
-            } else {
-                document.getElementById("result").innerHTML = "INVALID RESULT"
-
-            }
-        }
-    } else if (dayOfLabSelect === "wednesday") {
-        if (timeOfLabSelect === "930") {
-            if (labLocSelect === "haas257") {
-                document.getElementById("result").innerHTML = "SECTION G21 IS IN CL50 224, FROM 8 TO 10 PM."
-            } else {
-                document.getElementById("result").innerHTML = "INVALID RESULT"
-            }
-        }
-    } else if (timeOfLabSelect === "1130") {
-        if (labLocSelect === "lwsnb148") {
-            document.getElementById("result").innerHTML = "SECTION G19 IS IN CL50 224, FROM 8 TO 10 PM."
-        } else if (labLocSelect === "lwsnb146") {
-            document.getElementById("result").innerHTML = "SECTION G26 IS IN CL50 224, FROM 8 TO 10 PM."
-        } else if (labLocSelect === "haasg40") {
-            document.getElementById("result").innerHTML = "SECTION LC4 IS IN HAAS G056, FROM 5:30 to 7:30 PM"
-        } else {
-            document.getElementById("result").innerHTML = "INVALID RESULT"
-        }
-    } else if (timeOfLabSelect === "130") {
-        if (labLocSelect === "lwsnb146") {
-            document.getElementById("result").innerHTML = "SECTION B05 IS IN LWSN B148, FROM 8 to 10 PM"
-        } else if (labLocSelect === "haasg40") {
-            document.getElementById("result").innerHTML = "SECTION B08 IS IN LWSN B158, FROM 8 to 10 PM"
-        } else {
-            document.getElementById("result").innerHTML = "INVALID RESULT"
-        }
-    } else if (timeOfLabSelect === "330") {
-        if (labLocSelect === "haasg40") {
-            document.getElementById("result").innerHTML = "SECTION B12 IS IN CL50 224, FROM 8 to 10 PM"
-        } else {
-            document.getElementById("result").innerHTML = "INVALID RESULT"
-        }
-    } else if (dayOfLabSelect === "thursday") {
-        if (timeOfLabSelect === "930") {
-            if (labLocSelect === "haasg56") {
-                document.getElementById("result").innerHTML = "SECTION G16 IS IN CL50 224, FROM 8 to 10 PM"
-            } else if (labLocSelect === "haas257") {
-                document.getElementById("result").innerHTML = "SECTION B13 IS IN CL50 224, FROM 8 to 10 PM"
-            } else {
-                document.getElementById("result").innerHTML = "INVALID RESULT"
-            }
-        } else if (timeOfLabSelect === "1130") {
-            if (labLocSelect === "lwsnb146") {
-                document.getElementById("result").innerHTML = "SECTION G15 IS IN CL50 224, FROM 8 to 10 PM"
+                document.getElementById("result").innerHTML = "SECTION G19 IS IN CL50 224, FROM 8 TO 10 PM."
+            } else if (labLocSelect === "lwsnb146") {
+                document.getElementById("result").innerHTML = "SECTION G26 IS IN CL50 224, FROM 8 TO 10 PM."
             } else if (labLocSelect === "haasg40") {
-                document.getElementById("result").innerHTML = "SECTION B01 IS IN LWSN B158, FROM 5:30 to 7:30 PM"
+                document.getElementById("result").innerHTML = "SECTION LC4 IS IN HAAS G056, FROM 5:30 to 7:30 PM"
             } else {
                 document.getElementById("result").innerHTML = "INVALID RESULT"
             }
         } else if (timeOfLabSelect === "130") {
             if (labLocSelect === "lwsnb146") {
-                document.getElementById("result").innerHTML = "SECTION B03 IS IN LWSN B146, FROM 8 TO 10 PM"
+                document.getElementById("result").innerHTML = "SECTION B05 IS IN LWSN B148, FROM 8 to 10 PM"
+            } else if (labLocSelect === "haasg40") {
+                document.getElementById("result").innerHTML = "SECTION B08 IS IN LWSN B158, FROM 8 to 10 PM"
             } else {
                 document.getElementById("result").innerHTML = "INVALID RESULT"
             }
         } else if (timeOfLabSelect === "330") {
-            if (labLocSelect === "haasg56") {
-                document.getElementById("result").innerHTML = "SECTION B04 IS IN HAAS G056, FROM 8 TO 10 PM"
-            } else if (labLocSelect === "haas257") {
-                document.getElementById("result").innerHTML = "SECTION B11 IS IN HAAS G040, FROM 8 TO 10 PM"
-            } else {
-                document.getElementById("result").innerHTML = "INVALID RESULT"
-            }
-        }
-    } else if (dayOfLabSelect === "friday") {
-        if (timeOfLabSelect === "1130") {
-            if (labLocSelect === "lwsnb146") {
-                document.getElementById("result").innerHTML = "SECTION B09 IS IN CL50 224, FROM 8 to 10 PM"
-            } else {
-                document.getElementById("result").innerHTML = "INVALID RESULT"
-            }
-        } else if (timeOfLabSelect === "130") {
             if (labLocSelect === "haasg40") {
-                document.getElementById("result").innerHTML = "SECTION B09 IS IN CL50 224, FROM 8 to 10 PM"
-            } else if (labLocSelect === "lwsnb148") {
-                document.getElementById("result").innerHTML = "SECTION LC1 IS IN LWSN B146, FROM 5:30 to 7:30 PM"
+                document.getElementById("result").innerHTML = "SECTION B12 IS IN CL50 224, FROM 8 to 10 PM"
+            } else {
+                document.getElementById("result").innerHTML = "INVALID RESULT"
+            }
+        } else if (dayOfLabSelect === "thursday") {
+            if (timeOfLabSelect === "930") {
+                if (labLocSelect === "haasg56") {
+                    document.getElementById("result").innerHTML = "SECTION G16 IS IN CL50 224, FROM 8 to 10 PM"
+                } else if (labLocSelect === "haas257") {
+                    document.getElementById("result").innerHTML = "SECTION B13 IS IN CL50 224, FROM 8 to 10 PM"
+                } else {
+                    document.getElementById("result").innerHTML = "INVALID RESULT"
+                }
+            } else if (timeOfLabSelect === "1130") {
+                if (labLocSelect === "lwsnb146") {
+                    document.getElementById("result").innerHTML = "SECTION G15 IS IN CL50 224, FROM 8 to 10 PM"
+                } else if (labLocSelect === "haasg40") {
+                    document.getElementById("result").innerHTML = "SECTION B01 IS IN LWSN B158, FROM 5:30 to 7:30 PM"
+                } else {
+                    document.getElementById("result").innerHTML = "INVALID RESULT"
+                }
+            } else if (timeOfLabSelect === "130") {
+                if (labLocSelect === "lwsnb146") {
+                    document.getElementById("result").innerHTML = "SECTION B03 IS IN LWSN B146, FROM 8 TO 10 PM"
+                } else {
+                    document.getElementById("result").innerHTML = "INVALID RESULT"
+                }
+            } else if (timeOfLabSelect === "330") {
+                if (labLocSelect === "haasg56") {
+                    document.getElementById("result").innerHTML = "SECTION B04 IS IN HAAS G056, FROM 8 TO 10 PM"
+                } else if (labLocSelect === "haas257") {
+                    document.getElementById("result").innerHTML = "SECTION B11 IS IN HAAS G040, FROM 8 TO 10 PM"
+                } else {
+                    document.getElementById("result").innerHTML = "INVALID RESULT"
+                }
+            }
+        } else if (dayOfLabSelect === "friday") {
+            if (timeOfLabSelect === "1130") {
+                if (labLocSelect === "lwsnb146") {
+                    document.getElementById("result").innerHTML = "SECTION B09 IS IN CL50 224, FROM 8 to 10 PM"
+                } else {
+                    document.getElementById("result").innerHTML = "INVALID RESULT"
+                }
+            } else if (timeOfLabSelect === "130") {
+                if (labLocSelect === "haasg40") {
+                    document.getElementById("result").innerHTML = "SECTION B09 IS IN CL50 224, FROM 8 to 10 PM"
+                } else if (labLocSelect === "lwsnb148") {
+                    document.getElementById("result").innerHTML = "SECTION LC1 IS IN LWSN B146, FROM 5:30 to 7:30 PM"
+                }
             }
         }
     }
