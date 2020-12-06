@@ -1,0 +1,53 @@
+<html lang="en">
+<body>
+    <link rel="stylesheet" href="student_style.css">
+
+    <div class="header">
+        <h1>Create an Student Account </h1>
+    </div>
+
+    <div class="row">
+        <div class="column">
+
+            <form action="student_database.php" method="POST">
+                <label for="fname">First name:</label><br>
+                <input type="text" id="fname" name="fname" value="" required><br><br>
+                <label for="lname">Last name:</label><br>
+                <input type="text" id="lname" name="lname" value="" required><br><br>
+                <label for="email">Email:</label><br>
+                <input type="text" id="email" name="email" value="" required><br><br>
+                <label for="address">Address:</label><br>
+                <input type="text" id="address" name="address" value="" required><br><br>
+                <label for="major">Major:</label><br>
+                <input type="text" id="major" name="major" value="" required><br><br>
+                <label for="gpa">GPA:</label><br>
+                <input type="number" id="gpa" name="gpa" value="" step=".01" required><br><br>
+                <label for="exp">Research and Project Experience:</label><br>
+                <input type="text" id="exp" name="exp" value=""><br><br>
+                <label for="cer">Certificates:</label><br>
+                <input type="text" id="cer" name="cer" value=""><br><br>
+                <label>Are you willing to travel?</label><br>
+                <p>
+                    <input type="radio" name="yes_no_1" required>Yes</input>
+                </p>
+                <p>
+                    <input type="radio" name="yes_no_1">No</input><br><br>
+                </p>
+                <label>Are you eligible to work under your visa?</label><br>
+                <p>
+                    <input type="radio" name="yes_no_2" required>Yes</input>
+                </p>
+                <p>
+                    <input type="radio" name="yes_no_2">No<br><br>
+                </p>
+
+                <p>Please attach your résumé here:</p>
+                <input type="file" id="myFile" name="filename" required>
+                <input type="submit" Value="submit" name="submit">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
+<!--mysqli_query($mysqli, INSERT INTO 'Company' (cname, email, password)
+VALUES ($_POST['cname'], $_POST['email'], $_POST['password']);-->
