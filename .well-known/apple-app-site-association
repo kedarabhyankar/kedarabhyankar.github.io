@@ -1,8 +1,9 @@
 {
-  "applinks": {},
-  "webcredentials": {
-      "apps": [ "Y6VJVA9LCS.kedarabhyankar.Cadence" ]
-   },
-
-   "appclips": {}
+    "applinks": [],
+    "webcredentials": {
+        "apps": [
+            "Y6VJVA9LCS.kedarabhyankar.Cadence"
+        ]
+    },
+    "appclips": []
 }
