@@ -32,7 +32,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c67b44b5-2638-44c5-8202-345ad180b9f9" name="Default Changelist" comment="Updated Resume" />
+    <list default="true" id="c67b44b5-2638-44c5-8202-345ad180b9f9" name="Default Changelist" comment="Updated Resume">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -75,7 +77,7 @@
       <workItem from="1608670317622" duration="1627000" />
       <workItem from="1611079317792" duration="310000" />
       <workItem from="1618081526872" duration="1740000" />
-      <workItem from="1622143940055" duration="4142000" />
+      <workItem from="1622143940055" duration="4146000" />
     </task>
     <task id="LOCAL-00001" summary="Switched around jobs on the previous jobs section 🔃">
       <created>1603736284119</created>
