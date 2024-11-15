@@ -34,6 +34,11 @@
   <component name="ChangeListManager">
     <list default="true" id="c67b44b5-2638-44c5-8202-345ad180b9f9" name="Default Changelist" comment="Updated Resume">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KedarAbhyankarResume.pages" beforeDir="false" afterPath="$PROJECT_DIR$/KedarAbhyankarResume.pages" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KedarAbhyankarResume.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/KedarAbhyankarResume.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KedarAbhyankarResume_v2.pages" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/KedarAbhyankarResume_v2.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/KedarAbhyankarResume_v2.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +55,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -60,6 +66,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.HTML" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="project-level" UseSingleDictionary="true" transferred="true" />
@@ -78,6 +85,7 @@
       <workItem from="1611079317792" duration="310000" />
       <workItem from="1618081526872" duration="1740000" />
       <workItem from="1622143940055" duration="4146000" />
+      <workItem from="1723054947800" duration="1104000" />
     </task>
     <task id="LOCAL-00001" summary="Switched around jobs on the previous jobs section 🔃">
       <created>1603736284119</created>
@@ -147,5 +155,9 @@
     <MESSAGE value="Fixed Genesys Dates" />
     <MESSAGE value="Updated Resume" />
     <option name="LAST_COMMIT_MESSAGE" value="Updated Resume" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
