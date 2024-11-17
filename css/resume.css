@@ -1,7 +1,7 @@
 body {
     font-family: 'Open Sans', serif;
     padding-top: 54px;
-    color: #97ce7d
+    color: #dee2e6
 }
 
 @media (min-width: 992px) {
@@ -138,15 +138,15 @@ section.resume-section .resume-item .resume-date {
 }
 
 .bg-primary {
-    background-color: #1B9EDE !important
+    background-color: #97ce7d !important
 }
 
 .text-primary {
-    color: #1B9EDE !important
+    color: #97ce7d !important
 }
 
 a {
-    color: #1B9EDE
+    color: #97ce7d
 }
 
 a:active,
